@@ -1,1 +1,162 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的Java软件下载中心</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #34495e;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .download-container {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .download-btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        
+        .info-section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        
+        .info-section h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        ul, ol {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            
+            .download-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎下载我的Java软件</h1>
+        <p>高效、稳定的Java桌面应用程序</p>
+    </header>
+    
+    <div class="download-container">
+        <p>这是一个使用Java开发的应用程序，点击下方按钮下载安装程序。</p>
+        
+        <!-- 修改这里为您的实际下载链接 -->
+        <a href="https://github.com/yourusername/yourrepo/releases/download/v1.0/setup.exe" 
+           class="download-btn" 
+           download="MyJavaApp_Setup.exe">
+           下载安装程序 (v1.0)
+        </a>
+        
+        <p>文件大小: 85MB | 支持Windows 7/8/10/11</p>
+    </div>
+    
+    <div class="info-section">
+        <h2>系统要求</h2>
+        <ul>
+            <li><strong>操作系统:</strong> Windows 7/8/10/11 (64位)</li>
+            <li><strong>运行环境:</strong> Java Runtime Environment (JRE) 8或更高版本</li>
+            <li><strong>硬件要求:</strong> 至少500MB可用磁盘空间，4GB内存</li>
+            <li><strong>显示器:</strong> 1024×768以上分辨率</li>
+        </ul>
+    </div>
+    
+    <div class="info-section">
+        <h2>安装说明</h2>
+        <ol>
+            <li>点击上方下载按钮获取安装程序</li>
+            <li>运行下载的setup.exe文件</li>
+            <li>按照安装向导完成安装</li>
+            <li>从开始菜单或桌面快捷方式启动应用程序</li>
+            <li>首次运行时可能需要安装Java运行环境(会自动提示)</li>
+        </ol>
+    </div>
+    
+    <div class="info-section">
+        <h2>常见问题</h2>
+        <ul>
+            <li><strong>下载失败?</strong> 请尝试右键链接"另存为"</li>
+            <li><strong>无法安装?</strong> 请确保有管理员权限</li>
+            <li><strong>运行报错?</strong> 可能需要安装最新版Java</li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>© 2023 我的Java软件 | 技术支持: support@example.com</p>
+    </footer>
+</body>
+</html>
